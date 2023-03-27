@@ -1,0 +1,12 @@
+<txnmgr name="SimpleTransactionManager" logger="Q2"
+	class="org.jpos.transaction.TransactionManager">
+	<property name="space" value="myspace" />
+	<property name="queue" value="myqueue" />
+	<property name="sessions" value="1" />
+	<property name="debug" value="true" />
+
+
+	<participant class="com.CustomRequestListener.spring.transaction.TestParticipant"
+		logger="Q2" realm="Switch">
+	</participant>
+</txnmgr>
